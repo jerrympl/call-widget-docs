@@ -73,6 +73,43 @@ InterfeoWidget.config({
 });
 ```
 
+### Full code with full config passed to the widget
+
+```javascript
+<script type="text/javascript">
+    (function() {
+        var s = document.createElement('script');
+        s.setAttribute('src', '{ask_for_url}');
+        document.body.appendChild(s);
+    })();
+
+    window.addEventListener('interfeo:ready', function(event) {
+        InterfeoWidget.config({
+            minimizedStateTooltip: 'Zamów rozmowę telefoniczną',
+            minimizedStateIcon: 'phone',
+            minimizedStateIconSize: 40,
+            dialogTitle: 'Zostaw swój numer, oddzwonimy!',
+            dialogTitleSuccess: 'Dziękujemy',
+            dialogCopy: 'Niestety nie ma nas w biurze. Czy mamy oddzwonić do Ciebie, kiedy wrócimy do pracy?',
+            dialogPhoneFieldPlaceholder: 'Twój numer telefonu',
+            dialogConfirmButton: 'zadzwońcie do mnie',
+            dialogDismissButton: 'nie, dziękuję',
+            allowScheduleOtherDay: false,
+            gdprCheckboxCopy: 'Wyrażam zgodę na przetwarzanie danych osobowych',
+            scheduleOtherDayOptionsSwitcherLabel: 'zaplanuj na inny dzień',
+            scheduleOtherDayOptionsAvailableHours: ['dowolna', '8:00', '8:30', '9:00', '9:30', '10:00', '10:30', '11:00', '11:30', '12:00', '12:30'],
+            scheduleOtherDayOptionsAvailableDates: ['jutro', 'pojutrze', 'za dwa dni', 'za tydzień'],
+            scheduleOtherDayOptionsDayLabel: 'w jaki dzień?',
+            scheduleOtherDayOptionsTimeLabel: 'jaka godzina:',
+            messagesError: 'Wystąpił problem',
+            messagesSuccess: 'Twoja rozmowa została zamówiona. Wkrótce do Ciebie oddzwonimy',
+            messagesSending: 'wysyłanie...',
+            message: 'Rozmowa zamowiona'
+        })
+</script>
+});
+```
+
 
 Resizing widget iframe:
 
