@@ -10,7 +10,7 @@ Place this code on the bottom of your HTML structure. The best option is to put 
 <script type="text/javascript">
     (function() {
         var s = document.createElement('script');
-        s.setAttribute('src', 'http://call.interfeo.com/widgetEmbedd.js');
+        s.setAttribute('src', '{ask_for_url}');
         document.body.appendChild(s);
     })();
 </script>
