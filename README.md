@@ -106,8 +106,8 @@ InterfeoWidget.config({
             messagesSending: 'wysyłanie...',
             message: 'Rozmowa zamowiona'
         })
+    });
 </script>
-});
 ```
 
 
